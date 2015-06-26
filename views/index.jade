@@ -1,0 +1,10 @@
+extends layout
+
+block head
+	title Check For BlackList
+
+block content
+	form(action="/redacted", method="POST")
+		textarea( name="userInput", rows="10", cols="100" )
+		input(type="submit", text="Clean Up")
+	
